@@ -2,7 +2,7 @@
 
 // 이전 버튼 상태를 저장하여 디바운싱(Debouncing) 역할을 합니다.
 // 버튼을 한번만 눌렀을 때 여러 번 토글되는 것을 방지합니다.
-static GPIO_PinState prev_button_state = GPIO_PIN_RESET;
+static GPIO_PinState prev_button_state = GPIO_PIN_SET;
 
 /**
   * @brief  사용자 버튼의 상태를 확인하고 LED 동작을 제어합니다.
